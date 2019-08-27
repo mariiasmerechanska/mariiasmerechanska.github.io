@@ -4,9 +4,6 @@
   <head>
     <title>Maria's portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script>
-      // javascript
-    </script>
   </head>
   
   <body>
@@ -44,13 +41,15 @@
         </tr>
         <tr>
           <td class="class1"><b>СНІДАНОК</b></td>
-          <td>1</td>
-          <td >2</td>
-          <td >3</td>
-          <td >4</td>
-          <td >5</td>
-          <td >6</td>
-          <td >7</td>
+          <td>
+            1
+          </td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
         </tr>
         <tr>
           <td class="class1"><b>ОБІД</b></td>
@@ -74,5 +73,29 @@
           </tr>
       </table>
       <p>&copy; mariiasmerechanska.github.io</p>
+
+<script>
+// javascript
+  
+  var td_list = document.getElementsByTagName("td"); //викликає список елементів td
+  var arrayLength = td_list.length; //визначає довжину списку 
+  for (var i = 0; i < arrayLength; i=i+1) { //проходиться по кожному елементу,додаючи 1
+    var elem = td_list[i] //доступитися до елементів списку
+
+    elem.addEventListener("click", function(event) { //виклик ф-ї(подія, ф-я(аргумент))
+        var element = event.target //присвоїти ціль події змінній element
+        element.style = 'background-color: blue;' //стиль елементів - зміна
+    });
+  
+
+    elem.addEventListener("mouseleave", changeColor);
+
+
+  }
+  function changeColor(event) {
+    var element = event.target
+    element.style = 'background-color: white;' //
+  }
+</script>
 </body>
 </html>

@@ -61,3 +61,8 @@ head > {
 .another_class {
     border: black;
 }
+    
+.td-class {
+    background-color: blue;
+}
+
