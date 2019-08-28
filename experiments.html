@@ -1,0 +1,94 @@
+<html>
+    <body>
+
+    </body>
+
+
+    <script>
+
+        var number = 1
+        var float = 1.0 / 0.3
+        var string = "some text"
+        var bool = false
+        var array = [1,2,3,'a','b']
+        
+        var obj = {
+            num: number,
+            f: float,
+            str: string
+        }
+
+        function prnt(arg_1) {
+            console.log(arg_1);
+        }
+
+        var prnt_2 = function(arg_1) {
+            console.log(arg_1);
+        }
+        
+        var prnt_3 = prnt
+
+        function nested_function(fn, arg) {
+            console.log('calling fn', fn)
+            var a = 1
+
+            fn(arg)
+
+
+            function s_fn(a) {
+                // do somehting
+            }
+
+        }
+
+        nested_function(prnt, float)
+        nested_function(prnt, number)
+
+
+        function add(a, b) {
+            console.log(a + b)
+        }
+
+        add(1, 45)
+
+        // prnt_2(number)
+        // prnt(array)
+        // prnt_2(bool)
+        // prnt_3(1.234)
+
+        // console.log(number, string, float, bool,);
+        // console.log(array);
+        // console.log(obj);
+
+        console.log("################## FACTORIAL ################## ");
+
+        function fact(n) {
+            if (n <= 0) {
+                return 0
+            }
+            if (n == 1) {
+                return 1
+            }
+            
+            var result = n;
+            for (var i = 1; i < n; i=i+1) {
+                result = (n - i) * result
+            }
+            return result;
+        }
+        function fact_r(n) {
+            if (n <= 0) {
+                return 0
+            }
+            if (n == 1) {
+                return 1
+            }
+            return fact_r(n -1 ) * n           
+        }
+         
+
+        console.log(fact_r(12539))
+
+    </script>
+    
+</html>
