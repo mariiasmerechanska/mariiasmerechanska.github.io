@@ -22,12 +22,12 @@ div#FB> p {
     text-align: center; 
     }
 
-.FBref> a{
+.FBref > a {
     font-size: 18px;
     color: red;
     text-align: center;
-    }
 }
+
     
  tr:nth-child(even) {
     background: lightgrey;
