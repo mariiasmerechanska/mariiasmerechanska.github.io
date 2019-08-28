@@ -16,12 +16,23 @@ div#supermaria> img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
-.arial { 
-    font-family: Arial; 
 }
 
-tr:nth-child(even) {
+div#FB> p {
+    text-align: center; 
+    }
+
+div#FBref> {
+    margin: 0 auto;
+}
+
+a#link> {
+    margin: 0 auto;
+    color: red;
+}
+    
+
+ tr:nth-child(even) {
     background: lightgrey;
 }
 
@@ -30,9 +41,6 @@ th {
 }
 tr:hover {
     background-color: lightyellow;
-}
-
-
 }
 
 div#ostap {
@@ -63,19 +71,12 @@ div#ostap {
     border-style: solid
 }
 
-/* #one {
-   text-align: right 
-} */
-head > {
-    text-align: left
-}
-
 .class1 {
       background-color: aquamarine; color: red; 
   }
 
 .another_class {
-    border: black;
+    border: rgb(168, 157, 157);
 }
 
 .td-class {
