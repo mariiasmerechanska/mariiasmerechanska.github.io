@@ -22,16 +22,13 @@ div#FB> p {
     text-align: center; 
     }
 
-div#FBref> {
-    margin: 0 auto;
-}
-
-a#link> {
-    margin: 0 auto;
+.FBref> a{
+    font-size: 18px;
     color: red;
+    text-align: center;
+    }
 }
     
-
  tr:nth-child(even) {
     background: lightgrey;
 }
