@@ -10,9 +10,8 @@ tr:hover {
 }
 
 div#supermaria {
-    margin-right: 50%;
-    margin: 5px; border: 1px solid black; align-items: left; 
-    width: 50%
+    align-items: left; 
+    width: 50%; margin: 0 auto;
 }
 
 div#supermaria> p {
@@ -61,7 +60,7 @@ head > {
 .another_class {
     border: black;
 }
-    
+
 .td-class {
     background-color: blue;
 }
