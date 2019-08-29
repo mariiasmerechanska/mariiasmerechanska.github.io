@@ -28,7 +28,25 @@ div#FB> p {
     text-align: center;
 }
 
-    
+div#Proj> img {
+    width:100x; height:100px;
+} 
+
+div#Proj> p {
+    font-style: italic
+} 
+
+.section {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-width: 3px;
+    border-color: grey ;
+    border-style: double;
+}
+
  tr:nth-child(even) {
     background: lightgrey;
 }
