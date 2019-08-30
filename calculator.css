@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+}
+
+.container {
+    display: grid; /* вводить двовимірну сітку (рядки,колонки) */
+    justify-content: center; /* відцентровує вміст гріда */
+    grid-template-columns: 80px 80px 80px 80px; /* задає кожній колонці гріда розмір */
+    grid-template-rows: 80px 80px; /* задає кожному рядку гріда розмір*/
+    grid-template-areas:  /* присвоєння імені кожній комірці */
+  "header header header header" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main";
+}
+
+.item-header {  
+    grid-area: header; /* розміщення вгорі */
+    font-size: 64px;
+    background-color: black;
+    color: white;
+    text-align: right;
+}
+
+.btn {
+    background-color: dimgray;
+    border: none; 
+    color: white; /* колір букв */
+    padding: 20px; /* поле зліва від тексту в комірці */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    font-size: 27px; /* розмір шрифта */
+    border-radius: 50%; /* кругла комірка */
+}
+
+.silver {
+  background-color: silver;
+  color: black;
+}
+
+.orange {
+  background-color: orange;
+}
+
